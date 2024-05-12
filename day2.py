@@ -16,3 +16,10 @@ print("the subt of ",a,"-",b," is ",a-b)
 print("the mul of ",a,"*",b," is ",a*b)
 print("the divi of ",a,"/",b," is ",a/b)
 # done
+#type casting  to convert one data type into another data type
+#Note: while conversion the data inputed should be valid
+
+a = int("1")
+print(type(a))
+a = str(456)
+print(type(a))
