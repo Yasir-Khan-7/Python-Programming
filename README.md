@@ -1,0 +1,2 @@
+# Python-Programming
+ Welcome to my Python Programming Journey for Data Science repository! 🐍🌟 Here, I document my learning process as I dive into the world of Python programming, laying the foundation for my exciting journey into Data Science. From mastering basic syntax to exploring advanced concepts, this repository serves as a roadmap of my progress and a resource for fellow learners. Join me as I unravel the mysteries of data and unlock its endless possibilities! #Python #DataScience #LearningJourney
