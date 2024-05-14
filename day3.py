@@ -128,7 +128,7 @@ match x:
         
 # u can use if in match case statement
 
-x = 80
+x = 90
 match x:
     case 0:
         print('x is xero')
@@ -137,6 +137,29 @@ match x:
     case _ if(x!=90):
         print(x,"x not equal to 90")
     case _ if(x!=80):
-        print(x)
+        print(x," is not equal to 80")
     case _:
         print(x)
+
+#loops in python
+#printing character by character
+x ='yasir khan'
+for i in x:
+    print(i)
+#printing list
+list1 = ['ahmed','suffian','faizan','farzam']
+for names in list1:
+    print(names)
+    
+#now lets say we want to print characters of each string aswell
+list1 = ['ahmed','suffian','faizan','farzam']
+for names in list1:
+    print(names)
+    for i in names:
+        print(i)
+
+#range function in loop
+
+k=10
+for k in range(2,9,2):# first is start then stop then stepping called increment
+    print(k)
