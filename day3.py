@@ -150,6 +150,7 @@ for i in x:
 list1 = ['ahmed','suffian','faizan','farzam']
 for names in list1:
     print(names)
+   
     
 #now lets say we want to print characters of each string aswell
 list1 = ['ahmed','suffian','faizan','farzam']
