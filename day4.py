@@ -173,3 +173,19 @@ print(l.count(1))
 m = l.copy()
 m[0] =20
 print(m)
+
+#insert() you want to insert a value in any index
+l.insert(2,677)
+print(l)
+
+#extend method u want to extend a list 
+m = [199,188,177]
+l.extend(m)
+print(l)
+
+# concatenating two list 
+h =[1,2,3]
+j =[4,5,6]
+
+i = j+h
+print(i)
