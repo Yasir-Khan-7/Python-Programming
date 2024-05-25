@@ -116,6 +116,16 @@ print(timestamp)
 timestamp = time.strftime('%S')
 print(timestamp)
 
+#now doing goodmorning exercise
+hour = int(time.strftime("%H"))
+
+if(hour>0 and hour<12):
+    print('goodmorning Sir')
+elif(hour>12 and hour<17):
+    print("Good afternoon Sir")
+else:
+    print('Good night Sir')
+
 #match case statement--> just like switch cases but there is no break in it only matches case will execute
 x = 5
 match x:
