@@ -49,4 +49,7 @@ print(" banda kla putr bn jao")
 print('hello jani')
 
 print(name.center(100))
+print(name.endswith("@"))
+print(name.endswith("ir",0,5))
+
 
