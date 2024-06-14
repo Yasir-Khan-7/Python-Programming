@@ -84,5 +84,13 @@ str4 = "hello i am special \n ok"
 print(str3.isprintable())
 print(str4.isprintable())#false because of \n it is not printable character
 
-#ispace()
+#ispace() only gives true for only empty space
+empty = "   "
+print(empty.isspace())
 
+#istitle() search about it
+#title() search about it
+
+name1 = 'he is good boy'
+#startswith() if you string starts with gives true otherwise false
+print(name1.startswith("he"))
