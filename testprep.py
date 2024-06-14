@@ -42,3 +42,4 @@ print(name.split(" "))
 #capitalize method
 
 print(name.capitalize())
+print(" banda kla putr bn jao")
