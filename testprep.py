@@ -43,3 +43,5 @@ print(name.split(" "))
 
 print(name.capitalize())
 print(" banda kla putr bn jao")
+
+print('hello jani')
