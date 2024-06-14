@@ -42,10 +42,11 @@ print(name.split(" "))
 #capitalize method
 
 print(name.capitalize())
-<<<<<<< Updated upstream
+
 print(" banda kla putr bn jao")
 
-print('hello jani')
-=======
 
->>>>>>> Stashed changes
+print('hello jani')
+
+print(name.center(100))
+
