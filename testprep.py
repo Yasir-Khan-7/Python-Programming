@@ -47,6 +47,7 @@ print(" banda kla putr bn jao")
 
 
 print('hello jani')
-
+#IT Center the text
 print(name.center(100))
+
 
