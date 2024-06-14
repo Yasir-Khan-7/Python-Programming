@@ -49,6 +49,9 @@ print(name.capitalize())
 print('hello jani')
 #IT Center the text
 print(name.center(100))
+print(name.endswith("@"))
+print(name.endswith("ir",0,5))
+
 
 #endswith() returns true and false for checking
 print(name.endswith("@"))
