@@ -214,3 +214,83 @@ def increment(number, by):
 
 # for better understanding u can add keyword as 'number' =2 to know what actually your argument is
 increment(number=2, by=1)
+
+
+# default argument --> it is called optional parameters and should come after the required parameter
+def increment(number, by=1):  # by=1 is called default argument , you donot pass in calling and it comes after the required parameter
+    return number + by
+
+
+increment(2)
+
+# *args is used to pull multiple number of arguments -->pass variable number of argument to function
+
+
+def multiply(*number):  # so u can pull multiple arguments and it will be pakaged as tupples
+    total = 1
+    for number in number:
+        total = total * number
+
+    return total
+
+
+multiply(2, 3, 4, 5)
+
+# use of **args this will pull key  value pair argument and pakage as dictionary
+
+
+def save_user(**user):
+    print(user)  # will print the key value pairs in dictionary form
+
+
+save_user(id=1, name='yasir', age=22)
+
+
+# scope of function
+# local and global variables
+
+def fun():
+    message = "hello"  # local variable of function
+
+
+print(message)  # it will give error as the message has only scope inside function
+
+message = 'a'  # global variable
+
+
+def fun():
+    message = "b"  # local variable of function
+
+
+print(message)  # it will give 'a' as the message is outside the function
+# and it cannot be overide in function as scope of that variable is inside
+
+# use of global keyword
+essage = 'a'
+
+
+def fun():
+    global message
+    message = "b"  # it is now global variable
+
+
+print(message)  # it will print "b" because of global variable
+
+#fizzbuzz algo
+def fizzbuzz(input):
+    if(input%3==0 & input%5==0):
+        return "FIZZ BUZZ"
+    elif(input%3==0):
+        return "FIZZ"
+    elif(input%5==0):
+        return "BUZZ"
+    else:
+        return input
+    
+print(fizzbuzz(5))
+
+#classes OOP concepts
+
+#if you want to leave something empty use 'pass' so that python will understand u want to use it later
+class employee:
+    pass
