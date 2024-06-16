@@ -146,7 +146,7 @@ name = ''
 while len(name) == 0:
     name = input("enter you name please:")
 
-print(f"your age is {name}")
+print(f"your name is {name}")
 
 # use while loop to print number upto certain condition
 x = int(input("enter a number"))
@@ -155,6 +155,13 @@ while x < 5:
 
     print(x)
     x = x+1
+
+# quiz
+
+age = ""
+while len(age) == 0:
+    age = input("Enter your age")
+print("your age is ", age)
 
 # functions
 
@@ -169,8 +176,41 @@ fun1()
 # parameter is input you define for your function
 # while the argument is value you for given parameter
 
-def greet(first_name, Last_name):
+def greet(first_name, Last_name):  # parameter when defining function
     print(f" HI {first_name} {Last_name}")
 
 
-greet("yasir", "khan")
+greet("yasir", "khan")  # arguments while calling function
+
+
+# types of functions
+# 1-perform a task
+# 2- return a value
+
+# 1
+def greet(name):
+    print(f"helllo my name is  {name}")
+
+
+greet("yasir")
+# this will return none aswell because in python by default all function return none value
+print(greet("yasir"))
+# none is object that represent absence of value
+
+# 2
+
+
+def get_greeting(name):
+    return f"HI {name}"
+
+
+message = get_greeting("yasir")
+
+
+# keyword argument --> to make your code more readable and understandable
+def increment(number, by):
+    return number + by
+
+
+# for better understanding u can add keyword as 'number' =2 to know what actually your argument is
+increment(number=2, by=1)

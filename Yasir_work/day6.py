@@ -153,6 +153,7 @@ print(detail1) # not defined error because it got deleted
 
 for i in range(2,10,2):
     print(i)
+    
 else:
     print('sorry i is finished ')
     
