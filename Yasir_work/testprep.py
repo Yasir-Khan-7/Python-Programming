@@ -276,21 +276,80 @@ def fun():
 
 print(message)  # it will print "b" because of global variable
 
-#fizzbuzz algo
+# fizzbuzz algo
+
+
 def fizzbuzz(input):
-    if(input%3==0 & input%5==0):
+    if (input % 3 == 0 & input % 5 == 0):
         return "FIZZ BUZZ"
-    elif(input%3==0):
+    elif (input % 3 == 0):
         return "FIZZ"
-    elif(input%5==0):
+    elif (input % 5 == 0):
         return "BUZZ"
     else:
         return input
-    
+
+
 print(fizzbuzz(5))
 
-#classes OOP concepts
+# classes OOP concepts
 
-#if you want to leave something empty use 'pass' so that python will understand u want to use it later
+# if you want to leave something empty use 'pass' so that python will understand u want to use it later
+
+
 class employee:
     pass
+
+
+# class is basically a blue print of creating instances
+#  emp_1 , emp_2 are both instances of class and are unique
+emp_1 = employee()
+emp_2 = employee()
+print(emp_1)
+print(emp_2)
+
+# creating attributes manually
+"""
+emp_1.first = 'Yasir'
+emp_1.last = "khan"
+emp_1.email = 'Yasir.khan@gmail.com'
+emp_1.pay = 1500
+
+emp_2.first = 'Sharjeel'
+emp_2.last = "khan"
+emp_2.email = 'Sharjeel.khan@gmail.com'
+emp_2.pay = 1500
+
+print(emp_1.email)
+print(emp_2.email)
+
+"""
+# now to avoid this use __init__ method which is initializer whenever the object is created the init method is initialized (just like constructor in java OOP)
+# __init__ method takes self as first parameter and followed by the parameter you pass
+
+# note in class we have attributes and methods
+# note 'self' is important while creating methods
+
+
+class employee:
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.email = first+"." + last + "@company.com"
+        self.pay = pay
+
+    def Fullname(self):
+        return f"{self.first} {self.last}"
+
+
+emp_3 = employee('ahmed', 'khan', 3000)
+emp_4 = employee('faizan', 'ahmed', 5000)
+print(emp_3.email)
+print(emp_4.email)
+
+print(emp_4.Fullname())
+
+
+# the above code we created instance variable --> by using the self keyword
+# instance variable are unique for every instance
+# while class variable are common to every instance--> shared among all employees
