@@ -1,5 +1,7 @@
 # string are immutable
 # anything u enclose in double or single quote is called string
+
+
 name = 'yasir'
 friend = 'sharjeel'
 # when u want to add double quote
@@ -315,7 +317,7 @@ emp_1.last = "khan"
 emp_1.email = 'Yasir.khan@gmail.com'
 emp_1.pay = 1500
 
-emp_2.first = 'Sharjeel'
+emp_2.first = 'Sharjeel'# it is instance attribute
 emp_2.last = "khan"
 emp_2.email = 'Sharjeel.khan@gmail.com'
 emp_2.pay = 1500
@@ -353,3 +355,145 @@ print(emp_4.Fullname())
 # the above code we created instance variable --> by using the self keyword
 # instance variable are unique for every instance
 # while class variable are common to every instance--> shared among all employees
+# creating class variables that can be accessed by class itself and aswell as with the object of the class
+class employee:
+    raise_amount = 1.04
+    num_emp = 0
+
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.email = first+"." + last + "@company.com"
+        self.pay = pay
+        employee.num_emp = employee.num_emp+1
+
+    def Fullname(self):
+        return f"{self.first} {self.last}"
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
+
+emp1 = employee('Yasir', 'khan', 4000)
+emp2 = employee('ahmed', 'khan', 2900)
+print(employee.num_emp)  # it will be changed whenever new object is created
+emp1.apply_raise()
+# employee.apply_raise(emp1) #the  emp1.apply_raise() converted to this both are same at run time it converts
+print(emp1.pay)  # raise is applied as it common among all employees
+
+# Note instance attribute get preference over class attribute during assignment and retrieval
+
+
+class employee:
+    language = 'py'
+    salary = 12000
+
+
+emp5 = employee()
+emp6 = employee()
+
+emp5.language = 'JAVASCRPT'
+# here in language will be 'Javascript' because of prefenrce of instance attribute
+print(emp5.language, emp5.salary)
+
+
+# Practice set
+# problem #1 create programmer class  and stores information of programmers working at microsoft
+class programmer:
+    company = 'Microsoft'
+
+    def __init__(self, position, salary, name):
+
+        self.position = position
+        self.slary = salary
+        self.name = name
+
+
+p1 = programmer('Python developer', 14000, 'yasir')
+p2 = programmer('Java Developer', 12000, 'suffian')
+
+# problem #2 create Calculator class that calculate , square,cube and square root of a number
+# The ** operator is a convenient way to perform power calculations in Python.
+# it is base ** exponent
+
+
+class calculator:
+    def __init__(self, number):
+        self.number = number
+
+    def square(self):
+        return f"square is {self.number*self.number}"
+
+    def cube(self):
+        return f"cube is {self.number*self.number*self.number}"
+
+    def squareroot(self):
+        return f"square root is {self.number**1/2}"
+
+
+num = calculator(4)
+
+print(num.square())
+print(num.cube())
+print(num.squareroot())
+
+# 3 now create class attribute a and set value to a and now create instance attirubute a and check it change class atribute or not?
+
+
+class demo:
+    a = 4
+
+
+obj1 = demo()
+print(obj1.a)  # before instance attribute the value of  a=4 for child
+obj1.a = 3
+# once instance attribute with same name is created then it will print a=3
+print(obj1.a)
+
+# 4 add static method to the problem #2 that greets
+
+
+class calculator:
+    def __init__(self, number):
+        self.number = number
+
+    def square(self):
+        return f"square is {self.number*self.number}"
+
+    def cube(self):
+        return f"cube is {self.number*self.number*self.number}"
+
+    def squareroot(self):
+        return f"square root is {self.number**1/2}"
+
+    @staticmethod
+    def hello():
+        print("hello there!")
+
+
+num = calculator(4)
+num.hello()
+
+# 5 Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats)
+# and get fare information of train running under Indian Railways.
+
+from random import randint
+class Train:
+    def __init__(self, trainno):
+        self.traino = trainno
+
+    def Book_ticket(self, fro, to):
+        print(f"train ticket booked of {self.traino} from {fro} to {to}")
+
+    def get_status(self):
+        print(f"The train no {self.traino} is running on time")
+
+    def get_fare(self, fro, to):
+        print(f" ticket fare in train no: {self.traino} from {
+              fro} to {to} is {randint(300, 5000)}")
+
+
+t = Train(45678)
+t.Book_ticket("peshawar", 'karachi')
+t.get_fare("islamabad","lahore")
+# 6 can you change the 'self' parameter = yes u can write anything but self is conventional so easy to understand
