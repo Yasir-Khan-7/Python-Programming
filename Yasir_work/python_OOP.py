@@ -68,3 +68,14 @@ n2 = newspaper("one news")
 print(type(b1))        
 print(type(n1))
 #comapring both types to check if they are same or not
+print(type(b1)==type(b2))
+print(type(n1)==type(b1))
+
+#using isinstance method
+print(isinstance(b1,book))
+print(isinstance(n1,newspaper))
+print(isinstance(b1,newspaper))#gives false
+
+
+#note every python object is subclass of python built in object-class
+print(isinstance(n2,object))
