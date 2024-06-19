@@ -38,3 +38,13 @@ for index, mark in enumerate(marks, start=1):
 # deacticate your Environment
 
 # deeactivate write this to deactivate
+
+# command = 'pip freeze' it gives you all the list of dependencies thatare istalled in your environment
+
+# echo "X">main.py use to create a python file with X written in it
+
+# pip freeze > requirements.txt  it will create a txt file that contain all dependencies 
+# if you want to send the dependencies file to your friend who is collaborating with you
+
+
+# pip install -r requirements.txt  this command will install the dependencies present in txt file 
