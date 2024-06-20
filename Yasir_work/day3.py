@@ -1,4 +1,8 @@
+# format in string --> format the specific value and insert into string placeholder
+str = 'my name is {name} and age is {age}'
+print(str.format(name='yasir',age=23))
 #string method - continue 
+
 # replace() method -> IT replaces all occurance of a string with another string
 a ='yasir, khan'
 print(a.replace("yasir",'ahmed'))
