@@ -1,5 +1,6 @@
 # short hand if else in python
 # it is used when we have simple logic in complex it is not prefered
+
 a = 95
 b = 67
 
@@ -43,8 +44,35 @@ for index, mark in enumerate(marks, start=1):
 
 # echo "X">main.py use to create a python file with X written in it
 
-# pip freeze > requirements.txt  it will create a txt file that contain all dependencies 
+# pip freeze > requirements.txt  it will create a txt file that contain all dependencies
 # if you want to send the dependencies file to your friend who is collaborating with you
 
 
-# pip install -r requirements.txt  this command will install the dependencies present in txt file 
+# pip install -r requirements.txt  this command will install the dependencies present in txt file
+
+
+# import is loading code from a python module into current script ,allow you to use the functions and variables
+# into your current script as well as additional module that the import module may depend on
+import math
+print(math.sqrt(9))
+
+
+
+
+# using from keyword when you want to import only specific function
+from math import sqrt, pi
+result = sqrt(16) * pi  # so u use directly the specific function
+
+# using  'as' keyword it is used when u want to make the name short
+import math as m
+res = m.factorial(6)
+print(res)
+
+
+#using 'dir' it helps you to see all the functions that were imported
+import math 
+print(dir(math))
+
+#import from other files 
+from day7 import dummy
+dummy()
