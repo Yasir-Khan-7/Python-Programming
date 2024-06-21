@@ -23,3 +23,10 @@ def dictionary(num):
     return dic
     
 print(dictionary(5))
+
+
+#check for prime factors
+#check for palindrome
+#sort a string
+#find all list items
+#play the waiting game
