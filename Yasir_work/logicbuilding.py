@@ -39,8 +39,12 @@ print(dictionary(5))
 # save the dictionary into a file --> use pickle library
 # schedule a function
 # send an email
-# simulate dice roles
+# determine different probability when rolling a dice
 # count the number of unique words
+# write a program to generate passphrases u can use diceware(password generator)
+# mmerge csv files
+# solve sudoku
+# build a zip archive
 
 print("hello world!")
 print("temporary")
