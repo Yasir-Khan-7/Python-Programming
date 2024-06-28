@@ -6,48 +6,62 @@
 # it returns TRUE if both are correct and FALSE if any of the statements is wrong.
 
 # write a program diivsible by 7 not multple of 5 from 2000 to 3200
-lst =[]
-for number in range(2000,3200):
+# lst =[]
+# for number in range(2000,3200):
 
-    if number%7==0 and number%5!=1:
-        lst.append(number)
+#     if number%7==0 and number%5!=1:
+#         lst.append(number)
 
-print(lst)
+# print(lst)
 
-# write a program to calculate its factorial
-# fact of 0 and 1 is always 1
-def factorial(num):
-    if num ==0 and 1:
-        return 1
-    else:
-       return num*factorial(num-1)
-res = factorial(5)
-print(f"The factorial of {5} is: {res}")
+# # write a program to calculate its factorial
+# # fact of 0 and 1 is always 1
+# def factorial(num):
+#     if num ==0 and 1:
+#         return 1
+#     else:
+#        return num*factorial(num-1)
+# res = factorial(5)
+# print(f"The factorial of {5} is: {res}")
 
 
 # program 3 write a program that takes a number 
 # and creates dictionary of all previous numbers key is its index and square is its  value
 
-Dictionary={}
-def dict_number(num):
+# Dictionary={}
+# def dict_number(num):
     
-    for  x in range(1,num):
+#     for  x in range(1,num):
      
-        Dictionary[x] = x*x
+#         Dictionary[x] = x*x
         
-dict_number(5)    
-print(Dictionary)
+# dict_number(5)    
+# print(Dictionary)
 
 # check for prime factors
-lst2 = []
-def Prime(num):
-    
-        if num%num==0 and num%1==0:
-            lst2.append(num)
+# lst2 = []
+# def Prime(num):
+#     for x in range(2,num):
+        
+#         if  num%x==0:
+#             return False
+#         else:
+#             return True
        
-Prime()
-print(lst2)       
+# res =Prime(13)
+# print(res)    
 # check for palindrome
+
+def palindrome(str):
+        if str  == str[::-1]:
+
+            print("String is palindrome")
+         
+        else:
+            print("is not palindrome")
+        
+palindrome("yasir")
+
 # sort a string
 # find all list items
 # play the waiting game
