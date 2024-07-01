@@ -1,4 +1,8 @@
+import math
+
+
 #Note: & in Python
+
 # The ‘&‘ symbol is a bitwise AND operator in Python, it is also known as a bitwise AND operator.
 # It operates on the bitwise representation of integers.
 
@@ -52,16 +56,74 @@
 # print(res)    
 # check for palindrome
 
-def palindrome(str):
-        if str  == str[::-1]:
+# def palindrome(str):
+#         if str  == str[::-1]:
 
-            print("String is palindrome")
+#             print("String is palindrome")
          
-        else:
-            print("is not palindrome")
+#         else:
+#             print("is not palindrome")
         
-palindrome("yasir")
+# palindrome("yasir")
 
+# Question
+# Write a program which accepts a sequence of comma-separated numbers 
+# from console and generate a list and a tuple which contains every number.
+# Suppose the following input is supplied to the program:
+
+
+# lst1 =[]
+# lst2 = []
+
+# for x in range(0,5):
+#     number = input(f"Enter  number:{x+1} ")
+#     lst1.append(number)
+#     lst2.append(number)
+#     tup = tuple(lst2)
+    
+# print(lst1)
+# print(tup)
+
+# Question:
+# Define a class which has at least two methods:
+# getString: to get a string from console input
+# printString: to print the string in upper case.
+# Also please include simple test function to test the class methods.
+# class Stringbox:
+#     def __init__(self):
+#         self.str = " "
+
+#     def getString(self):
+#         self.str = input("Enter the String: ")
+#     def printString(self):
+#         print(self.str)
+    
+# obj = Stringbox()
+# obj.getString()
+# obj.printString()
+
+
+
+# Question:
+# Write a program that calculates and prints the value according to the given formula:
+# Q = Square root of [(2 * C * D)/H]
+# Following are the fixed values of C and H:
+# C is 50. H is 30.
+# D is the variable whose values should be input to your program in a comma-separated sequence.
+
+# def calculateQ(*args):
+#     print(args)
+#     new_lst = []
+#     C = 50
+#     H = 30 
+#     for x in args:
+#         print(x)
+#         Q = math.sqrt((2*C*x)/H)
+#         new_lst.append(str(int(round(Q))))
+#     return new_lst
+
+# res =calculateQ(23,24,33)
+# print(res)
 # sort a string
 # find all list items
 # play the waiting game
