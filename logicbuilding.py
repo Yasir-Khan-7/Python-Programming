@@ -124,6 +124,40 @@ import math
 
 # res =calculateQ(23,24,33)
 # print(res)
+
+
+# Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array.
+# The element value in the i-th row and j-th column of the array should be i*j.
+# Note: i=0,1.., X-1; j=0,1,¡­Y-1.
+
+
+# def two_dimensional(num1,num2):
+#     twoD = [[0,0,0],[0,0,0],[0,0,0]]
+#     for x in range(num1):
+#         for y in range(num2):
+         
+#             twoD[x][y] = x*y     
+          
+#     print(twoD)
+# two_dimensional(3,3)  
+    
+# Write a program that accepts a comma separated sequence of words 
+# as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+
+def Sorting_words():
+    lst =[]
+    for x in range(4):
+        word = input("Enter word:  ")
+        lst.append(word)
+    lst.sort()
+    return lst
+        
+    # return lst.sort()
+
+print(Sorting_words())
+
+
+
 # sort a string
 # find all list items
 # play the waiting game
