@@ -167,16 +167,57 @@ import math
 # HELLO WORLD
 # PRACTICE MAKES PERFECT
 
-user_input = input("Enter your desired statement: ")
-lines =[]
+# user_input = input("Enter your desired statement: ")
+# lines =[]
 
-while True:
-    user_input = input("Please enter your desired string: ")
-    if user_input:
-        lines.append(user_input.upper())
-    else: 
-        break
-print("your desired lines are: ",lines)
+# while True:
+#     user_input = input("Please enter your desired string: ")
+#     if user_input:
+#         lines.append(user_input.upper())
+#     else: 
+#         break
+# print("your desired lines are: ",lines)
+
+#Question
+# Write a program which accepts a sequence of comma separated
+# 4 digit binary numbers as its input and then check whether 
+# they are divisible by 5 or not. The numbers that are divisible 
+# by 5 are to be printed in a comma separated sequence.
+
+# number = int(input("Enter 4 digit number: "))
+
+# if number%5==0:
+#     print(number)
+# else:
+#     print("number is not divisble by 5")
+
+
+# Question:
+# Write a program, which will find all such numbers between 1000 and 3000 
+# (both included) such that each digit of the number is an even number.
+# The numbers obtained should be printed in a comma-separated sequence on a single line.
+# lst =[]
+# for x in range(1000,3001):
+#     if x%2==0:
+#         lst.append(x)
+# print(lst)
+
+# Question:
+# Write a program that accepts a sentence and calculate the number of letters and digits.
+# Suppose the following input is supplied to the program:
+
+# letter_and_digit = input("Enter letter and some digits: ")
+# letter = 0
+# digit = 0
+# for x in letter_and_digit:
+#     if x.isdigit():
+#         digit+=1
+#     elif x.isalpha():
+#         letter+=1
+#     else:
+#         print("not a letter or digit")
+# print("letter count is: ",letter)
+# print("digit count is: ",digit)
 # sort a string
 # find all list items
 # play the waiting game

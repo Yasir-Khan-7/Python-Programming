@@ -1,29 +1,33 @@
-#now here we are resampling the data
 import pandas as pd
-import time
-# x = pd.read_csv('car_data.csv')
+import matplotlib.pyplot as plt
 
-# print(x)
-# index = pd.date_range(x, periods=9, freq='min')
-# series = pd.Series(range(9), index=index)
-# print(series)
+# Load the data
+df = pd.read_csv('bms_data.csv')
 
-# Sample data creation for demonstration
-data = {
-    'timestamp': pd.date_range(start='2023-01-01', periods=200, freq='T'),  # 200 rows of 1-minute intervals
-    'speed': range(200),
-    'distance': range(0, 400, 2)
-}
-df = pd.DataFrame(data)
-print(df)
-# Convert timestamp to datetime
-df['timestamp'] = pd.to_datetime(df['timestamp'])
 
-# Set the timestamp column as the index
-df.set_index('timestamp', inplace=True)
+# Convert Timestamp column to datetime
+df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 
-# Resample the data to 5-minute intervals and calculate the mean for numeric columns
-df_resampled = df.resample('5min').mean()
+# Set the Timestamp column as the index
+df.set_index('Timestamp', inplace=True)
 
-# Display the resampled data
-print(df_resampled)
+
+# Resample the data to 5-minute intervals
+resample_interval = '5T'
+df_resampled = df.resample(resample_interval).mean()
+
+# Plot the original and resampled data
+plt.figure(figsize=(10, 6))
+
+# Plot original data
+plt.plot(df.index, df['CL_BMS_OPER_CODE[1]'], label='Original Data', alpha=0.5)
+
+# Plot resampled data
+plt.plot(df_resampled.index, df_resampled['CL_BMS_OPER_CODE[1]'], label=f'Resampled Data ({resample_interval} intervals)', color='red')
+
+# Add labels, title, and legend
+plt.xlabel('Time')
+plt.ylabel('CL_BMS_OPER_CODE[1]')
+plt.title('Original vs. Resampled Data')
+plt.legend()
+plt.show()
