@@ -144,20 +144,39 @@ import math
 # Write a program that accepts a comma separated sequence of words 
 # as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 
-def Sorting_words():
-    lst =[]
-    for x in range(4):
-        word = input("Enter word:  ")
-        lst.append(word)
-    lst.sort()
-    return lst
+# def Sorting_words():
+#     lst =[]
+#     for x in range(4):
+#         word = input("Enter word:  ")
+#         lst.append(word)
+#     lst.sort()
+#     return lst
         
-    # return lst.sort()
+#     # return lst.sort()
 
-print(Sorting_words())
+# print(Sorting_words())
 
 
+# Question
+# Write a program that accepts sequence of lines as input and
+# prints the lines after making all characters in the sentence capitalized.
+# Suppose the following input is supplied to the program:
+# Hello world
+# Practice makes perfect
+# Then, the output should be:
+# HELLO WORLD
+# PRACTICE MAKES PERFECT
 
+user_input = input("Enter your desired statement: ")
+lines =[]
+
+while True:
+    user_input = input("Please enter your desired string: ")
+    if user_input:
+        lines.append(user_input.upper())
+    else: 
+        break
+print("your desired lines are: ",lines)
 # sort a string
 # find all list items
 # play the waiting game
