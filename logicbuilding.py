@@ -218,6 +218,53 @@ import math
 #         print("not a letter or digit")
 # print("letter count is: ",letter)
 # print("digit count is: ",digit)
+
+#Question create a function that counts the number of vowels in a string
+
+# def count_vowel(str):
+#     count =0
+#     lst = ['a','e','i','o','u']
+#     for x in str:
+#         if x in lst:
+#             count+=1
+#     return count
+# user_input = input("Enter your string: ").lower()       
+
+# res =count_vowel(user_input)
+# print(res)
+
+#Question write a program to check the number if its prime
+
+# user_input = int(input("Enter number to check:  "))
+# if user_input%2==0:
+#     print("number is not prime")
+# else:
+#     print("number is prime")
+
+#count the number of unique words
+# user_input = input("Enter your desire words to count: ")
+# user=user_input.replace(" ","")
+# # unique=user_input.split(" ")
+# # words=set(unique)
+# # u=len(words)
+# # print(f"Unique Words are",u)
+# lst=[]
+# for char in user:
+#     if char not in lst and char!='':
+#         lst.append(char)
+# print(len(lst))   
+
+
+user_input = input("Enter your desire words to count:")
+user=user_input.replace(" ","")
+words=set(user)
+print(len(words))
+
+
+    
+        
+
+
 # sort a string
 # find all list items
 # play the waiting game
