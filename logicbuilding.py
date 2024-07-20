@@ -315,6 +315,69 @@ def  count():
     print(count)
 count()
 
+#Question 22
+#Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters
+
+sentence = input("Enter your desired statement: ")
+upper = 0
+lower = 0
+for x in sentence:
+    if x.isupper():
+        upper +=1
+    elif x.lower():
+        lower +=1
+        
+print(upper)        
+print(lower)
+
+#Question 23
+# Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+
+user_input = input("Enter a number you want to process: ")
+sum =0
+for x in range(1,5):
+    res= user_input*x
+    sum += int(res)
+
+print(sum)
+
+#Question 24 Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers. 
+lst = [1,3,5,7,9,11]
+new_lst = []
+for i in lst:
+    if i%2==1:
+        new_lst.append(i*i)
+    else:
+        continue
+print(new_lst)  
+
+#Question 25 Write a program that computes the net amount of a bank account based a transaction log 
+# from console input. The transaction log format is D means deposit while W means withdrawal.
+
+user_input = input("Enter 'd' to deposite amount and 'w' to widrawal amount: ")
+deposit_amount =0
+widrawal_amount =0
+while True:
+    if user_input == 'd':
+        deposit_amount = input("Enter  the amount to proceed deposit: ")
+        process_again =  input("do you want to deposite more?  (y/n): ")
+        if process_again =='y':
+            continue
+        else:
+            break
+    elif user_input =='w':
+        widrawal_amount = input("Enter  the amount to proceed widrawal: ")
+        widraw_more = input("Do you want to widraw more? (y/n) ")
+        if widraw_more=='y':
+            continue
+        else:
+            break
+    else:
+        print("please enter d or w  you have entered invalid character: ")
+        continue
+net_amount = int(deposit_amount)-int(widrawal_amount)
+print("your net total amount is : ",net_amount)
+ #this needs  more work todo   
 
 #given a list of alph
 # sort a string
