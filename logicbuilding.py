@@ -378,7 +378,33 @@ while True:
 net_amount = int(deposit_amount)-int(widrawal_amount)
 print("your net total amount is : ",net_amount)
  #this needs  more work todo   
+ 
+#Question 26
+"""A website requires the users to input username and password to register. Write a program to check the validity of password input by users.
 
+Following are the criteria for checking the password:
+
+At least 1 letter between [a-z]
+At least 1 number between [0-9]
+At least 1 letter between [A-Z]
+At least 1 character from [$#@]
+Minimum length of transaction password: 6
+Maximum length of transaction password: 12"""
+
+# def validate_password(password):
+def checkpassword():
+    password = input("Enter password to check its validity")
+    if not any(x.islower() for x in password):
+        print("enter small case letter")
+    if not any(x.isupper() for x in password):    
+        print("enter upper case for validity")
+    if not any(x.isdigit for x in password):
+        print("enter a number for validity")
+    if not any(x.isnumeric() for x in password):
+        print("enter a numeric character aswell")
+    else:
+        print("valid password")
+checkpassword()
 #given a list of alph
 # sort a string
 # find all list items
