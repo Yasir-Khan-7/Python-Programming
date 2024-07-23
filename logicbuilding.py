@@ -394,17 +394,36 @@ Maximum length of transaction password: 12"""
 # def validate_password(password):
 def checkpassword():
     password = input("Enter password to check its validity")
+    
+    if len(password) <6 or len(password) >12:
+        print("Please enter password in valid length")
     if not any(x.islower() for x in password):
         print("enter small case letter")
     if not any(x.isupper() for x in password):    
         print("enter upper case for validity")
     if not any(x.isdigit for x in password):
         print("enter a number for validity")
-    if not any(x.isnumeric() for x in password):
-        print("enter a numeric character aswell")
+    if not any(x.isdigit() for x in password):
+        print("enter a numeric character")
     else:
         print("valid password")
 checkpassword()
+
+#Question 27
+# You are required to write a program to sort the (name, age, score) tuples 
+# by ascending order where name is string, age and score are numbers.
+# The tuples are input by console. The sort criteria is:
+
+def sorting_function():
+    lst=[]
+    name = input("Enter the name: ")
+    age = input("Enter the age")
+    score = input("Enter the score")
+    
+
+print(user_input)
+
+
 #given a list of alph
 # sort a string
 # find all list items
