@@ -409,22 +409,9 @@ def checkpassword():
         print("valid password")
 checkpassword()
 
-#Question 27
-# You are required to write a program to sort the (name, age, score) tuples 
-# by ascending order where name is string, age and score are numbers.
-# The tuples are input by console. The sort criteria is:
 
-def sorting_function():
-    lst=[]
-    name = input("Enter the name: ")
-    age = input("Enter the age")
-    score = input("Enter the score")
-    
+#COMPLETED TILL HERE BELOW QUESTIONS ARE OPTIONAL 
 
-print(user_input)
-
-
-#given a list of alph
 # sort a string
 # find all list items
 # play the waiting game
